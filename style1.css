@@ -1,0 +1,144 @@
+body {
+    background: linear-gradient(135deg, #1e1e2f, #12121b);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Changed from center */
+    height: auto; /* Allow page to grow */
+    min-height: 100vh; /* Ensure full page height */
+    overflow-y: auto; /* Enable scrolling */
+}
+
+/* Glassmorphism Container */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 20px; /* Ensure it’s visible at the top */
+}
+
+/* Heading */
+h1, h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffcc00;
+}
+
+/* Form Styling */
+form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10; /* Ensure form is always visible */
+}
+
+/* Ensure input fields are visible */
+input, textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Submit Button */
+button {
+    background: linear-gradient(45deg, #ff9800, #ff5722);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #e68900, #d84315);
+    transform: scale(1.05);
+}
+
+/* Reviews Section */
+#reviews {
+    margin-top: 20px;
+}
+
+/* Review Cards */
+.review {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 600px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.review:hover {
+    transform: scale(1.03);
+}
+
+/* Delete and Update Buttons */
+.delete-btn, .update-btn {
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.delete-btn {
+    background: linear-gradient(45deg, #ff4444, #cc0000);
+    color: white;
+}
+
+.delete-btn:hover {
+    background: linear-gradient(45deg, #cc0000, #990000);
+    transform: scale(1.05);
+}
+
+.update-btn {
+    background: linear-gradient(45deg, #448aff, #2962ff);
+    color: white;
+}
+
+.update-btn:hover {
+    background: linear-gradient(45deg, #2962ff, #0039cb);
+    transform: scale(1.05);
+}
+
+/* 🔥 Ensures the form is visible at the top */
+#reviewForm {
+    margin-top: 50px; /* Adds space to ensure visibility */
+    z-index: 20;
+    position: relative;
+}
+
+/* Enable scrolling and smooth navigation */
+html {
+    scroll-behavior: smooth;
+}
